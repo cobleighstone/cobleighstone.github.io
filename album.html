@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What's Your Favorite Album? — Abbey Cobleigh</title>
+<meta name="description" content="A senior project: seventeen interviews with UW students about how and why they find meaning in the music they love most — a one-hour radio show and forty archival CDs." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/bold.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="projects.html">Projects</a>
+      <a href="album.html">Music<span>&amp;Me</span></a>
+      <a href="resume.html">Resume</a>
+    </div>
+    <a href="#contact" class="nav-cart">Contact</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="page-head" data-screen-label="Album — Header">
+  <a href="projects.html" class="back-link">← All projects</a>
+  <div class="page-meta">
+    <span><span class="star">★</span> Senior Project · Community, Environment &amp; Planning</span>
+    <span class="muted">2025 — 2026</span>
+  </div>
+  <h1 class="page-title">What's your<br />favorite album?</h1>
+  <p class="page-sub">How &amp; why UW students find meaning in the music they love most.</p>
+  <div class="tags">
+    <span class="tag">17 Interviews</span>
+    <span class="tag">Thematic Analysis</span>
+    <span class="tag">Narrative Journalism</span>
+    <span class="tag">Radio</span>
+    <span class="tag">Rainy Dawg Radio</span>
+  </div>
+</header>
+
+<!-- AD POSTER (featured) -->
+<section class="band" data-screen-label="Album — Poster" style="border-top: 0;">
+  <div class="band-inner" style="padding-top: clamp(20px,3vw,36px);">
+    <div class="poster-feature">
+      <a class="poster-frame reveal" href="assets/album/ad-poster.jpg" target="_blank" rel="noopener">
+        <img src="assets/album/ad-poster.jpg" alt="Music & Me senior project ad poster: hand-lettered title on lined paper, the hand-painted album-cover CD, and the name Abbey Cobleigh with the CEP logo" loading="eager" />
+      </a>
+      <div class="poster-note reveal" data-delay="100">
+        <p class="poster-lead">Senior Project Night Ad Poster</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUILT -->
+<section class="band" data-screen-label="Album — Quilt">
+  <div class="band-inner" style="padding-top: clamp(20px,3vw,36px);">
+    <figure class="quilt reveal">
+      <div class="quilt-frame">
+        <img src="assets/album-quilt.jpeg" alt="A hand-painted grid of seventeen favorite album covers" />
+      </div>
+      <figcaption class="quilt-cap">
+        <span class="lbl">Plate 01</span>
+        <span>The favorite albums of all seventeen participants, hand-painted as the cover art for the CDs. Artwork designed by <strong>Sofia Geherin</strong>.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- INSPIRATION -->
+<section class="band" data-screen-label="Album — Inspiration">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>Where It Started</span><span>01 / A question over coffee</span></div>
+    <div class="two-col">
+      <p class="col-lead reveal">I was sitting at a café with my friend Nina, and I asked her what her favorite album was.</p>
+      <div class="col-body reveal" data-delay="100">
+        <p>
+          She ended up describing how her favorite album, <em>Twin Fantasy</em> by Car
+          Seat Headrest, changed the way she saw the world and how she interacted with
+          the people in her life. It taught her things she still thinks about every
+          single day.
+        </p>
+        <p>
+          It was so inspiring that it made me wonder whether this was a universal
+          experience, and it made me want to find a way to tell people's stories and
+          memorialize them!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH QUESTION -->
+<section class="band" data-screen-label="Album — Research question">
+  <div class="band-inner">
+    <div class="rq-inner">
+      <div class="eyebrow reveal" style="border:0; padding-bottom:0;"><span>Research Question</span></div>
+      <p class="rq-text">
+        In what ways do favorite albums become <span class="dim">meaningful objects</span>
+        in the lives of UW students, and through what mechanisms is that meaning constructed?
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- LISTEN -->
+<section class="band" id="listen" data-screen-label="Album — Listen">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>Listen</span><span>02 / The radio show</span></div>
+
+    <div class="listen-grid">
+      <div class="listen-left">
+        <div class="player reveal" data-delay="60">
+      <div class="player-top">
+        <button class="play-btn" id="mainPlay" aria-label="Play the full episode"><span class="ico-play"></span></button>
+        <div class="player-info">
+          <span class="eb">Full Show · Rainy Dawg Radio · aired May 7</span>
+          <h3>What's Your Favorite Album?</h3>
+          <span class="sub">≈ 60 min · 11 stories on air</span>
+        </div>
+        <div class="waveform" id="wave" aria-hidden="true"></div>
+      </div>
+      <div class="player-status" id="status">The full show lives on Google Drive — tap play to open it ↗</div>
+    </div>
+
+    <a class="more reveal" data-delay="160" href="https://drive.google.com/drive/folders/1jfgMku5VX0JXnJFmxsM86QL9CQtsd7EE?usp=sharing" target="_blank" rel="noopener">Listen to the full archive on Google Drive →</a>
+      </div>
+      <div class="listen-photo reveal" data-delay="120">
+        <img src="assets/album/radio-show.jpg" alt="Abbey on air at Rainy Dawg Radio, beside the ON AIR sign" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLIER -->
+<section class="band" data-screen-label="Album — Flier">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>On Air As</span><span>“DJ Cobleighstone”</span></div>
+    <div class="flier-embed">
+      <div class="flier-pair reveal">
+        <a class="flier-doc has-img" href="assets/album/show-flier.jpg" target="_blank" rel="noopener">
+          <img src="assets/album/show-flier.jpg" alt="Music & Me radio show flier with a hand-painted album-cover quilt; 7 May, DJ Cobleighstone on rainydawg.org, 1–2pm" loading="lazy" />
+        </a>
+        <a class="flier-doc has-img" href="assets/album/show-flier-handmade.jpg" target="_blank" rel="noopener">
+          <img src="assets/album/show-flier-handmade.jpg" alt="Hand-drawn Music & Me outreach poster with a studio microphone; live Thursday 1–2pm on Rainy Dawg Radio" loading="lazy" />
+        </a>
+      </div>
+      <div class="flier-note reveal" data-delay="100">
+        <h3>Music &amp; Me</h3>
+        <p>The show aired live as <strong>“Music &amp; Me”</strong> on Rainy Dawg Radio, May 7, 1–2 pm. An hour inviting listeners to hear how &amp; why UW students find meaning in the music they love most.</p>
+        <p>Outreach flier artwork by <strong>Sofia Geherin</strong>.</p>
+        <a href="https://rainydawg.org" target="_blank" rel="noopener" class="more">rainydawg.org →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LITERATURE REVIEW -->
+<section class="band" data-screen-label="Album — Literature review">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>Literature Review</span><span>03 / Grounding</span></div>
+    <div class="lit-grid">
+      <article class="lit-item reveal">
+        <span class="lit-no">01</span>
+        <h3>Music shapes identity</h3>
+        <p>DeNora (1999) frames music as a <span class="clay">“technology of the self”</span> — a tool people actively use to build who they are.</p>
+      </article>
+      <article class="lit-item reveal" data-delay="80">
+        <span class="lit-no">02</span>
+        <h3>Music triggers memory</h3>
+        <p>Janata (2009) shows emotionally intense music activates autobiographical-memory pathways in the brain.</p>
+      </article>
+      <article class="lit-item reveal" data-delay="160">
+        <span class="lit-no">03</span>
+        <h3>Music builds community</h3>
+        <p>Suttie (2016) finds shared listening creates measurable neurochemical bonds between people.</p>
+      </article>
+      <article class="lit-item reveal" data-delay="240">
+        <span class="lit-no">04</span>
+        <h3>Narrative journalism</h3>
+        <p>Offers a framework for turning lived experience into compelling, ethical stories — the bridge from data to broadcast.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- METHODS -->
+<section class="band" data-screen-label="Album — Methods">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>Methods</span><span>04 / Four steps</span></div>
+    <ol class="method-list">
+      <li class="method-step reveal">
+        <span class="step-no">Step 01 · Winter</span>
+        <div>
+          <h3>Dissemination &amp; recruitment</h3>
+          <p>Posted fliers around campus inviting students to talk about their favorite album.</p>
+        </div>
+      </li>
+      <li class="method-step reveal" data-delay="80">
+        <span class="step-no">Step 02 · Winter</span>
+        <div>
+          <h3>Conduct interviews</h3>
+          <p>Seventeen UW students, 15–35 minutes each, recorded on Voice Memos, transcribed, then cleaned by hand.</p>
+          <div class="q-examples">
+            <span class="lbl">Asked, among others:</span>
+            <ul>
+              <li>What is your favorite album?</li>
+              <li>How did it make you feel the first time you heard it?</li>
+              <li>Has this album taught you anything?</li>
+              <li>How has its meaning changed over time?</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="method-step reveal" data-delay="160">
+        <span class="step-no">Step 03 · Winter</span>
+        <div>
+          <h3>Thematic analysis</h3>
+          <p><strong>Abductive coding</strong> — neither purely deductive nor inductive. The literature review shaped what I was attuned to, but the themes were grounded in what participants actually said, not categories imposed in advance.</p>
+          <div class="code-flow">
+            <span>Familiarization with Data</span><span>Initial Codes</span><span>Initial Themes</span><span>Review Themes</span><span>Define &amp; Name Themes/Codes</span><span>Review + Finalize Codebook</span>
+          </div>
+        </div>
+      </li>
+      <li class="method-step reveal" data-delay="240">
+        <span class="step-no">Step 04 · Spring</span>
+        <div>
+          <h3>Creation &amp; presentation</h3>
+          <p>Drafted a script across spring quarter, wrote seventeen narrative bios plus an intro and outro, performed eleven live on air, and pre-recorded all seventeen for the CDs.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- FIVE THEMES -->
+<section class="band" data-screen-label="Album — Themes">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>Five Themes</span><span>05 / What meaning is made of</span></div>
+    <div class="themes-grid">
+      <div class="theme reveal"><span class="theme-no">01</span><h3>Composition</h3><p class="theme-def">Meaning derived from the work itself.</p><p class="theme-quote">“I really liked that the whole album is like a story.”</p></div>
+      <div class="theme reveal" data-delay="80"><span class="theme-no">02</span><h3>Emotion</h3><p class="theme-def">Meaning through affective experience.</p><p class="theme-quote">“Albums like this make me feel safe and grounded.”</p></div>
+      <div class="theme reveal" data-delay="160"><span class="theme-no">03</span><h3>Connection</h3><p class="theme-def">Meaning through social &amp; relational context.</p><p class="theme-quote">“I knew if I saw someone listening to MCR we were gonna be friends.”</p></div>
+      <div class="theme reveal" data-delay="240"><span class="theme-no">04</span><h3>Identity</h3><p class="theme-def">Meaning through self-construction.</p><p class="theme-quote">“It reminds me to just love and experience what I'm experiencing right now.”</p></div>
+      <div class="theme reveal" data-delay="320"><span class="theme-no">05</span><h3>Memory</h3><p class="theme-def">Meaning through temporal anchoring.</p><p class="theme-quote">“It's almost become more special to me, because now it's really like a memory.”</p></div>
+    </div>
+
+    <figure class="media-figure reveal" data-delay="80">
+      <div class="frame"><img src="assets/album/thematic-coding.jpg" alt="Treemap of thematic coding results showing sources of meaning in favorite albums, by code frequency" loading="lazy" /></div>
+      <figcaption><span class="lbl">Fig. 01</span><span>Coding results across all seventeen interviews — each theme broken into its sub-codes by frequency. Identity, Memory, and Connection drew the most coded references; <em>formation</em> (75), <em>artistic-value</em> (58), and <em>specific memory</em> (52) were the single largest codes.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- QUOTES -->
+<section class="band" data-screen-label="Album — Voices">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>In Their Words</span><span>06 / Voices</span></div>
+    <div class="quote-wall">
+      <blockquote class="q-card reveal">“It felt nostalgic even though it was the first time I heard it.”</blockquote>
+      <blockquote class="q-card reveal" data-delay="60">“I'll probably never be able to listen to it without thinking of her.”</blockquote>
+      <blockquote class="q-card reveal" data-delay="120">“It just keeps coming with me every year, to different places.”</blockquote>
+      <blockquote class="q-card reveal" data-delay="60">“It makes me remember some of the best times of my life.”</blockquote>
+      <blockquote class="q-card reveal" data-delay="120">“I'll listen to those songs and they'll bring me energy.”</blockquote>
+      <blockquote class="q-card reveal" data-delay="180">“You have to take the love that is there and enjoy it.”</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERABLES -->
+<section class="band" data-screen-label="Album — Deliverables">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>Deliverables</span><span>07 / What was made</span></div>
+    <div class="products-grid">
+      <article class="product has-img reveal">
+        <div class="p-img"><img src="assets/album/radio-show.jpg" alt="Abbey broadcasting live on air" loading="lazy" /></div>
+        <div class="p-body">
+          <span class="eb">Broadcast</span>
+          <h3>One-hour radio show</h3>
+          <p>Streamed live on Rainy Dawg Radio — UW's student-run station — on May 7, 1–2 pm. Eleven students' stories, told on air alongside their music.</p>
+        </div>
+      </article>
+      <article class="product has-img reveal" data-delay="120">
+        <div class="p-img"><img src="assets/album/cds.jpg" alt="The stack of hand-made archival CDs" loading="lazy" /></div>
+        <div class="p-body">
+          <span class="eb">Object</span>
+          <h3>~40 archival CDs</h3>
+          <p>An extended edition with all seventeen narrative bios, given back to the interviewees — their stories permanently memorialized in a form you can hold.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="band" data-screen-label="Album — Resources">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>Dig Deeper</span><span>Slides, audio &amp; more</span></div>
+    <div class="resource-grid">
+      <a class="resource-card reveal" href="https://canva.link/b49jmazpouu1c5n" target="_blank" rel="noopener">
+        <span class="r-ico">▤</span>
+        <span>
+          <span class="r-title">Presentation slides</span>
+          <span class="r-sub">The full senior-project deck ↗</span>
+        </span>
+        <span class="r-arrow">→</span>
+      </a>
+      <a class="resource-card reveal" data-delay="100" href="https://drive.google.com/drive/folders/1jfgMku5VX0JXnJFmxsM86QL9CQtsd7EE?usp=sharing" target="_blank" rel="noopener">
+        <span class="r-ico">♫</span>
+        <span>
+          <span class="r-title">Listen to the show</span>
+          <span class="r-sub">Full radio archive on Google Drive ↗</span>
+        </span>
+        <span class="r-arrow">→</span>
+      </a>
+      <a class="resource-card reveal" data-delay="200" href="https://drive.google.com/drive/folders/11vcHoEHNMsvTeHGG5Vi1zqUBSLugP8EW?usp=drive_link" target="_blank" rel="noopener">
+        <span class="r-ico">❝</span>
+        <span>
+          <span class="r-title">Coded transcripts</span>
+          <span class="r-sub">All interviews coded in Taguette ↗</span>
+        </span>
+        <span class="r-arrow">→</span>
+      </a>
+      <a class="resource-card reveal" data-delay="300" href="https://docs.google.com/document/d/1O66jVXtJHKvXrxHi83JE85I-uB4qTFtdosFiOPklN8E/edit?usp=sharing" target="_blank" rel="noopener">
+        <span class="r-ico">✎</span>
+        <span>
+          <span class="r-title">Final write-up</span>
+          <span class="r-sub">Read the full report (Google Doc) ↗</span>
+        </span>
+        <span class="r-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONCLUSION -->
+<section class="conclusion" data-screen-label="Album — Conclusion">
+  <div class="conclusion-inner">
+    <span class="eb">Conclusion</span>
+    <p class="conclusion-quote">
+      A question as simple as “what's your favorite album?” opens a far broader
+      conversation, revealing how people see themselves and make sense of their lives.
+      They love the music they love because it taught them something, or holds their
+      good times, hard times, and the people they love. The meaning always reaches far
+      beyond the audio, and almost everyone shared one quiet certainty: that the album
+      would always be there for them.
+    </p>
+  </div>
+</section>
+
+<!-- CREDITS -->
+<section class="band" data-screen-label="Album — Credits">
+  <div class="band-inner">
+    <div class="eyebrow reveal"><span>Credits</span><span>08 / 17 students, 17 albums</span></div>
+    <ol class="credit-list reveal">
+      <li class="credit-row"><span class="c-no">01</span><span class="c-name">Caden McIlhenny</span><span class="c-album">Cinema</span></li>
+      <li class="credit-row"><span class="c-no">02</span><span class="c-name">JJ O'Connell</span><span class="c-album">Blue Rev</span></li>
+      <li class="credit-row"><span class="c-no">03</span><span class="c-name">Gabi Treece</span><span class="c-album">In the Aeroplane Over the Sea</span></li>
+      <li class="credit-row"><span class="c-no">04</span><span class="c-name">Ari Bleu Conboy</span><span class="c-album">Being So Normal</span></li>
+      <li class="credit-row"><span class="c-no">05</span><span class="c-name">Nina Chenu</span><span class="c-album">Twin Fantasy</span></li>
+      <li class="credit-row"><span class="c-no">06</span><span class="c-name">Lydia Manville</span><span class="c-album">A Promise</span></li>
+      <li class="credit-row"><span class="c-no">07</span><span class="c-name">Julia Neville</span><span class="c-album">Supermodel</span></li>
+      <li class="credit-row"><span class="c-no">08</span><span class="c-name">Gemma Zuvich</span><span class="c-album">Welcome to the Black Parade</span></li>
+      <li class="credit-row"><span class="c-no">09</span><span class="c-name">Simarya Ahuja</span><span class="c-album">Back to Black</span></li>
+      <li class="credit-row"><span class="c-no">10</span><span class="c-name">Aidan Hood</span><span class="c-album">Oil of Every Pearl's Un-Insides</span></li>
+      <li class="credit-row"><span class="c-no">11</span><span class="c-name">Johnny Scull</span><span class="c-album">BRAT</span></li>
+      <li class="credit-row"><span class="c-no">12</span><span class="c-name">Peter Barbeau</span><span class="c-album">Here's What You Do</span></li>
+      <li class="credit-row"><span class="c-no">13</span><span class="c-name">Willow Goetting</span><span class="c-album">In the Aeroplane Over the Sea</span></li>
+      <li class="credit-row"><span class="c-no">14</span><span class="c-name">Sofia Geherin</span><span class="c-album">MJ Lenderman (Self-Titled)</span></li>
+      <li class="credit-row"><span class="c-no">15</span><span class="c-name">Katy Muir</span><span class="c-album">Highway Companion</span></li>
+      <li class="credit-row"><span class="c-no">16</span><span class="c-name">Michael Pun</span><span class="c-album">Naked All the Time</span></li>
+      <li class="credit-row"><span class="c-no">17</span><span class="c-name">Ian Stansberry</span><span class="c-album">The Glow Pt. 2</span></li>
+    </ol>
+    <p class="art-credit reveal">CD artwork designed by <strong>Sofia Geherin</strong>. Thank you to every student who shared their story.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer class="contact" id="contact" data-screen-label="Album — Contact">
+  <div class="contact-inner">
+    <h2>Want a<br />CD?</h2>
+    <p class="contact-intro reveal">The full show and the archival CDs are still around — reach out and I'll get one to you.</p>
+    <div class="contact-links reveal" data-delay="100">
+      <a href="mailto:abbeycobleigh@gmail.com">abbeycobleigh@gmail.com</a>
+      <a href="https://www.linkedin.com/in/abbey-cobleigh-87673b26b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="#">Seattle, WA</a>
+    </div>
+    <div class="contact-foot">
+      <span>© 2026 Abbey Rose Cobleigh</span>
+      <span>UW · CEP &amp; ESRM</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>
+  (function () {
+    var wave = document.getElementById('wave');
+    if (wave) {
+      [10,22,14,34,26,40,18,30,12,24,38,16,28,20,36,14].forEach(function (h, i) {
+        var s = document.createElement('span');
+        s.style.height = h + 'px';
+        s.style.animationDelay = (i * 0.06) + 's';
+        wave.appendChild(s);
+      });
+    }
+    var audio = new Audio(), current = null;
+    var player = document.querySelector('.player');
+    var mainPlay = document.getElementById('mainPlay');
+    var status = document.getElementById('status');
+    function setMain(on) { if (mainPlay) { mainPlay.classList.toggle('playing', on); if (player) player.classList.toggle('playing', on); } }
+    function soon(msg) {
+      if (!status) return;
+      status.textContent = msg || 'Audio coming soon — check back after the premiere';
+      status.style.color = 'var(--butter)';
+      clearTimeout(soon._t);
+      soon._t = setTimeout(function () { status.textContent = 'The full show lives on Google Drive — tap play to open it ↗'; status.style.color = ''; }, 2600);
+    }
+    function tryPlay(src, cb) {
+      if (!src) { soon(); if (cb) cb(false); return; }
+      if (current === src && !audio.paused) { audio.pause(); if (cb) cb(false); return; }
+      audio.src = src; current = src;
+      audio.play().then(function () { if (cb) cb(true); }).catch(function () { soon('Could not load audio yet'); if (cb) cb(false); });
+    }
+    if (mainPlay) mainPlay.addEventListener('click', function () { window.open('https://drive.google.com/drive/folders/1jfgMku5VX0JXnJFmxsM86QL9CQtsd7EE?usp=sharing', '_blank', 'noopener'); });
+    document.querySelectorAll('.track').forEach(function (li) {
+      var btn = li.querySelector('.track-play');
+      function handle() {
+        tryPlay(li.getAttribute('data-src') || '', function (on) {
+          document.querySelectorAll('.track').forEach(function (t) { t.style.background = ''; });
+          if (on) li.style.background = 'var(--butter-2)';
+        });
+      }
+      btn.addEventListener('click', function (e) { e.stopPropagation(); handle(); });
+      li.addEventListener('click', handle);
+    });
+    audio.addEventListener('ended', function () { setMain(false); document.querySelectorAll('.track').forEach(function (t) { t.style.background = ''; }); });
+  })();
+</script>
+</body>
+</html>
